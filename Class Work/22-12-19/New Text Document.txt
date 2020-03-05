@@ -1,0 +1,17 @@
+Truth table
+
+-> 
+marks = input("Enter your marks: ")
+
+If marks >= 90:
+	print("Your Grade is A")
+elif  90 > marks >= 80:
+	print("Your Grade is B")
+elif  80 > marks >= 70:
+	print("Your Grade is C")
+elif  70 > marks > 60:
+	print("Your Grade is D")
+elif  marks <= 60:
+	print("Your Grade is E")
+else
+	print("Invalid Entry")

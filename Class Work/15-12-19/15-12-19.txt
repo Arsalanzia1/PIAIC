@@ -1,0 +1,4 @@
+by default sorted function sort the value according to first column
+data science from scratch 2
+python crash book 1-10
+

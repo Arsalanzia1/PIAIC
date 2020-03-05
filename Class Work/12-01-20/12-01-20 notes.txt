@@ -1,0 +1,5 @@
+pip install
+package vs module
+importace of package and module is time saving and easy way
+jis ko private krna us k nam sa pehla 2 dafa underscore laga dein
+as key word is for alias ..nickname
