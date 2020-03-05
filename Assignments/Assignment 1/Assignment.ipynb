@@ -1,0 +1,626 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Predefined Functions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['__add__',\n",
+       " '__class__',\n",
+       " '__contains__',\n",
+       " '__delattr__',\n",
+       " '__dir__',\n",
+       " '__doc__',\n",
+       " '__eq__',\n",
+       " '__format__',\n",
+       " '__ge__',\n",
+       " '__getattribute__',\n",
+       " '__getitem__',\n",
+       " '__getnewargs__',\n",
+       " '__gt__',\n",
+       " '__hash__',\n",
+       " '__init__',\n",
+       " '__init_subclass__',\n",
+       " '__iter__',\n",
+       " '__le__',\n",
+       " '__len__',\n",
+       " '__lt__',\n",
+       " '__mod__',\n",
+       " '__mul__',\n",
+       " '__ne__',\n",
+       " '__new__',\n",
+       " '__reduce__',\n",
+       " '__reduce_ex__',\n",
+       " '__repr__',\n",
+       " '__rmod__',\n",
+       " '__rmul__',\n",
+       " '__setattr__',\n",
+       " '__sizeof__',\n",
+       " '__str__',\n",
+       " '__subclasshook__',\n",
+       " 'capitalize',\n",
+       " 'casefold',\n",
+       " 'center',\n",
+       " 'count',\n",
+       " 'encode',\n",
+       " 'endswith',\n",
+       " 'expandtabs',\n",
+       " 'find',\n",
+       " 'format',\n",
+       " 'format_map',\n",
+       " 'index',\n",
+       " 'isalnum',\n",
+       " 'isalpha',\n",
+       " 'isascii',\n",
+       " 'isdecimal',\n",
+       " 'isdigit',\n",
+       " 'isidentifier',\n",
+       " 'islower',\n",
+       " 'isnumeric',\n",
+       " 'isprintable',\n",
+       " 'isspace',\n",
+       " 'istitle',\n",
+       " 'isupper',\n",
+       " 'join',\n",
+       " 'ljust',\n",
+       " 'lower',\n",
+       " 'lstrip',\n",
+       " 'maketrans',\n",
+       " 'partition',\n",
+       " 'replace',\n",
+       " 'rfind',\n",
+       " 'rindex',\n",
+       " 'rjust',\n",
+       " 'rpartition',\n",
+       " 'rsplit',\n",
+       " 'rstrip',\n",
+       " 'split',\n",
+       " 'splitlines',\n",
+       " 'startswith',\n",
+       " 'strip',\n",
+       " 'swapcase',\n",
+       " 'title',\n",
+       " 'translate',\n",
+       " 'upper',\n",
+       " 'zfill']"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a= 'The quick brown fox Jumps Over the Lazy DOG'\n",
+    "dir(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The quick brown fox jumps over the lazy dog\n"
+     ]
+    }
+   ],
+   "source": [
+    "Capital= a.capitalize()  # Sentence case\n",
+    "print(Capital)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the quick brown fox jumps over the lazy dog\n"
+     ]
+    }
+   ],
+   "source": [
+    "Casefold= a.casefold() #lowering the string case\n",
+    "print(Casefold)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "********The quick brown fox Jumps Over the Lazy DOG*********\n"
+     ]
+    }
+   ],
+   "source": [
+    "Center= a.center(60,\"*\") # move the string to the center of the input number of characters\n",
+    "print(Center)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "List1= [1,2,3,4,1,2,6,7,8,4,3,8,9,0,5,4,7,8,6,0,9,3] # counts number of times an item appeared in list\n",
+    "Count=List1.count(4)\n",
+    "print(Count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "b'The quick brown fox Jumps Over the Lazy DOG'\n"
+     ]
+    }
+   ],
+   "source": [
+    "Encode=a.encode()\n",
+    "print(Encode)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "Endwith=a.endswith('the Lazy') #checks the string ending\n",
+    "print(Endwith)\n",
+    "Endwith1=a.endswith('DOG')\n",
+    "print(Endwith1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The quick brown fox Jumps Over the Lazy DOG\n"
+     ]
+    }
+   ],
+   "source": [
+    "Expendtabs=a.expandtabs()\n",
+    "print(Expendtabs)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "18\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "qoute= \"we  are Pakistani nation\" #The find() method returns the index of first occurrence of the substring (if found). If not found, it returns -1.\n",
+    "Find= qoute.find('are')\n",
+    "print(qoute.find('nation'))\n",
+    "print(Find)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n"
+     ]
+    },
+    {
+     "ename": "ValueError",
+     "evalue": "substring not found",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-12-5e8996e21cfb>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[0mIndex\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mqoute\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mindex\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'Pakistani'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mIndex\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 3\u001b[1;33m \u001b[0mprint\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mqoute\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mindex\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'python'\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mValueError\u001b[0m: substring not found"
+     ]
+    }
+   ],
+   "source": [
+    "Index = qoute.index('Pakistani')\n",
+    "print(Index)\n",
+    "print(qoute.index('python'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isalnum() method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG'\n",
+    "b=\"kjabdn9293nfkjn934fknnnbsdkjafoiufdljf\"\n",
+    "Isalnum= a.isalnum()\n",
+    "print(b.isalnum())\n",
+    "print(Isalnum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isalpha() method returns True if all characters in the string are alphabets. If not, it returns False.\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG' #contains white space\n",
+    "b=\"kjabdn9293nfkjn934fknnnbsdkjafoiufdljf\" # contains number\n",
+    "print(a.isalpha())\n",
+    "print(b.isalpha())\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isdecimal() method returns True if all characters in a string are decimal characters. If not, it returns False.\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG' #contains white space\n",
+    "b=\"kjabdn9293nfkjn934fknnnbsdkjafoiufdljf\"# contains number\n",
+    "c= \"165135\"\n",
+    "print(a.isdecimal())\n",
+    "print(b.isdecimal())\n",
+    "print(c.isdecimal())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isdigit() method returns True if all characters in a string are digits. If not, it returns False.\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG' #contains white space\n",
+    "b=\"kjabdn9293nfkjn934fknnnbsdkjafoiufdljf\"# contains number\n",
+    "c= \"165135\"\n",
+    "print(a.isdigit())\n",
+    "print(b.isdigit())\n",
+    "print(c.isdigit())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isidentifier() method returns True if the string is a valid identifier in Python. If not, it returns False.\n",
+    "I= \"Python\"\n",
+    "print(I.isidentifier())\n",
+    "\n",
+    "I= \"Pyth on\"\n",
+    "print(I.isidentifier())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The islower() method returns True if all alphabets in a string are lowercase alphabets. If the string contains at least one uppercase alphabet, it returns False.\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG' #contains upper case\n",
+    "b=\"kjabdn9293nfkjn934f knnnbsdkjafoiufdljf\"# no upper case\n",
+    "\n",
+    "print(a.islower())\n",
+    "print(b.islower())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isnumeric() method returns True if all characters in a string are numeric characters. If not, it returns False\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG' #contains no numeric\n",
+    "b=\"kjabdn9293nfkjn934f knnnbsdkjafoiufdljf\"# contains mixture\n",
+    "c=\"545365 6532156\" #contain space\n",
+    "d=\"6546546\" #contains number\n",
+    "print(a.isnumeric())\n",
+    "print(b.isnumeric())\n",
+    "print(c.isnumeric())\n",
+    "print(d.isnumeric())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isprintable() methods returns True if all characters in the string are printable or the string is empty. If not, it returns False.\n",
+    "s = 'Space is a printable'\n",
+    "print(s.isprintable())\n",
+    "s = '\\n'\n",
+    "print(s.isprintable())\n",
+    "s = ''\n",
+    "print(s.isprintable())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The isspace() method returns True if there are only whitespace characters in the string. If not, it return False.\n",
+    "s = '\\t \\t'\n",
+    "print(s.isspace())\n",
+    "s = '\\n'\n",
+    "print(s.isspace())\n",
+    "s = 'q  '\n",
+    "print(s.isspace())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n",
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The istitle() returns True if the string is a titlecased string. If not, it returns False\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG.' \n",
+    "b=\"kjabdn9293nfkjn934f knnnbsdkjafoiufdljf\"\n",
+    "c=\"DOG\" \n",
+    "d=\"Phython\" \n",
+    "\n",
+    "print(a.istitle())\n",
+    "print(b.istitle())\n",
+    "print(c.istitle())\n",
+    "print(d.istitle())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "#The string isupper() method returns whether or not all characters in a string are uppercased or not.\n",
+    "a= 'The quick brown fox Jumps Over the Lazy DOG.'\n",
+    "b=\"A BLACK BOX\"\n",
+    "\n",
+    "print(a.isupper())\n",
+    "print(b.isupper())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Operands With 20 Operators\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "-362.84420289855075"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "20+25+(1/2-88)*4+63-15*(8+9/2-14)+3.25-(87/3+53)-49*2+(28/69)+33\n",
+    "\n",
+    "#  20+25+(1/2-88)*4+63-15*(8+9/2-14)+3.25-(87/3+53)-49*2+(28/69)+33\n",
+    "#  20+25+(-87.5)*4+63-15*(-1.5)+3.25-(82)-49*2+(0.405)+33\n",
+    "#  20+25-87.5*4+63+22.5-78.75-49*2+(0.405)+33\n",
+    "#  20+25-350+63+22.5-78.75-98+0.405+33\n",
+    "#  20+25-350+63+22.5-78.75-98+0.405+33\n",
+    "#  163.905-526.75\n",
+    "#  -362.845\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
